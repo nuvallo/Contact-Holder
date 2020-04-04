@@ -1,9 +1,12 @@
 // this is how you "import" in node"
 const express = require("express");
+const connectDB = require("./config/db");
 
 const app = express();
 
-// adding endpoint (Route)
+// Connect Database
+
+// Adding endpoint (Route)
 app.get("/", (req, res) =>
   res.json({ msg: "Welcome to the ContactHolder API" })
 );
